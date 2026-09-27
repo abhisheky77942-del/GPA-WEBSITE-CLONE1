@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA OFFICIAL CLONE</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <meta name="title" content="GPA Clone Website">
+    <meta name="description"
+        content="This Site is the Clone of Government Polytechnic 	Adityapur.Through visits this websiteyou can Know about essential details and 	features of GPA as well as track any currrently activities which are conducting in 	our college.">
+    <meta name="keywords"
+        content="GPA, Best polytechnic college in jharkhand, 	government polytechnic college, Adityapur college,JUT college , Jharkhand college">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Abhishek kumar Yadav">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding:0;
+            /* padding-top:70px; */
+
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+        
+        .toparea {
+            width: 100%;
+            background: #4177C7;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* logoarea */
+        .logoarea {
+            width: 100%;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+        }
+
+        .collage-name {
+            font-size: 25px;
+            color: #2B6C33;
+        }
+
+        .approved {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .iconpart {
+            color: #B73B3B;
+        }
+
+        .icon-img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        /* navbar area */
+        .navbararea {
+            width: 100%;
+            height: 50px;
+            background: #CBB4F3;
+            overflow: visible;
+            position: relative;
+        }
+        .navbar{
+            position:sticky;
+            top:0;
+            left:0;
+            width:100%;
+            z-index:1000;
+        }
+        
+
+        .home-icon:hover {
+            color: blue;
+        }
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .collapse ul li a {
+            color: black;
+            font-size: 20px;
+        }
+
+        .collapse ul li ul li a {
+            color: black;
+            font-size: 17px;
+        }
+
+        .collapse li a:hover {
+            color: blue;
+        }
+
+        .collapse li ul li a:hover {
+            color: green;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                width: 300px;
+                position: absolute;
+                top: 100%;
+                left: 10px;
+                width: 100%;
+                background: #fff;
+                z-index: 1050;
+                transition: all 0.4s ease-in-out;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+            }
+        }
+
+        /*  */
+        /* Top Recruiters */
+        .top-recruiter {
+            min-height: 130px;
+            background: black;
+            color: white;
+            font-size: 25px;
+        }
+
+        .sign img {
+            margin-top: -50px;
+        }
+
+        .company-logo {
+            /* width:159px;
+            height:70px; */
+            border-radius: 15px;
+        }
+
+        .company-logo img {
+            width: 130px;
+            height: 80px;
+        }
+
+        .company-name{
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee-content {
+            display:flex;
+            gap:20px;
+            animation: company 20s linear infinite;
+        }
+
+        @keyframes company {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* .marquee-class{
+            float:left;
+            flex-direction:row;
+            gap:2px;
+            overflow-x:auto;
+        } */
+
+        /* home>oue-achievememt */
+        .home a {
+            text-decoration: none;
+        }
+
+        .home a:hover {
+            text-decoration: underline;
+        }
+
+        /* A Proud Moment */
+        .proud-moment {
+            background: #F4F4F4;
+        }
+
+        .ceremony-image {
+           width: 324px;
+            min-height: 388px;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding:0;
+        }
+
+        .ceremony-image img {
+            max-width: 100%;
+            height:auto;
+            object-fit:cover;
+            border-radius: 15px 15px 0 0;
+   
+        }
+
+        .short-button {
+            margin-top: 15px;
+            margin-left: 8px;
+        }
+
+        .short-button h6 {
+            color: blue;
+            margin-top: 20px;
+            margin-left: 8px;
+        }
+
+        .short-button p {
+            margin-left: 8px;
+        }
+
+        .read-more-btn1 {
+            border-radius: 12px;
+            background: red;
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+        }
+
+        .read-more-btn3 {
+            border-radius: 12px;
+            background: #FFC107;
+            color: black;
+            padding: 4px 25px;
+            text-decoration: none;
+        }
+
+        .read-more-btn2 {
+            display: inline-block;
+            padding: 6px 100px;
+            text-decoration: none;
+            color: white;
+            background: #337AB7;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .read-more-btn2 a:hover {
+            background: #286090;
+        }
+
+        @media(max-width:768px){
+            .ceremony-image {
+                text-align: center;
+                justify-content: center;
+                margin-right: 8px;
+            }
+        }
+
+        /* ABOuT comapany */
+
+        /* footerarea */
+        .footerarea {
+            width: 100%;
+            background: #101A4C;
+            /* color: #9494A1; */
+        }
+
+        .importantlink {
+            min-width: 324px;
+            min-height: 294px;
+            font-size: 18px;
+            line-height: 13px;
+        }
+
+        .importantlink a {
+            text-decoration: none;
+            color: #9494A1;
+            display: block;
+            margin-bottom: 14px;
+            /* do link ke bitch ka gap*/
+        }
+
+        .importantlink a:hover {
+            color: #1AB69D;
+        }
+
+        .address {
+            color: #9494A1;
+        }
+
+        .importantlink h4 {
+            color: white;
+        }
+
+        .importantlink3 {
+            min-width: 250px;
+            min-height: 180px;
+        }
+
+        .importantlink3 h4 {
+            color: white;
+        }
+
+        /* @media screen and  (max-width:1000px) {
+
+    /* Size fo small decices */
+        /* .address {
+        margin-top: 60px;
+    } */
+        .footpart{
+            color: white;
+            font-weight: bold;
+        }
+
+        .footarea i {
+            font-size: 25px;
+        }
+
+        .footpart3 {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="toparea">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-6 text-center my-1 ps-3 mb-2 mb-md-0">
+                    <i class="fa fa-envelope">&nbsp; Email: gpa2010@rediffmail.com</i>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4 text-center">
+                    <img src="https://www.gpa.ac.in/assets/images/about/sbi_logo.jpg" class="image-fluid" alt="SBI Logo"
+                        title="Online fee payment">
+                </div>
+                <div class="col-12 col-md-2 col-lg-2 my-1 text-center">
+                    <i class="fa fa-facebook-official mx-2"></i>
+                    <i class="fa fa-linkedin mx-2"></i>
+                    <i class="fa fa-twitter mx-2"></i>
+                    <i class="fa  fa-youtube-play mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- logo section -->
+    <section class="logoarea">
+        <div class="container">
+            <div class="row  align-items-center">
+                <div class="col-12 col-md-2 col-lg-2">
+                    <img src="logo.png" alt="GPA logo" class="img-fluid logo">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center text-md-start my-4">
+                    <h2 class="collage-name">GOVERNMENT POLYTECHNIC,ADITYAPUR</h2>
+                    <p class="approved">Approved by AICTE, New Delhi, DHTE, Govt. of Jharkhand & Affiliated to JUT
+                        Ranchi</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 iconpart">
+                    <div class="row text-center">
+                        <div class="col-3">
+                            <img src="https://www.gpa.ac.in/home/admission.png" alt="Admission Procedure"
+                                class="img-fluid icon" /><br>
+                            <b>Admission</b>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.gpa.ac.in/home/results.png" class="img-fluid icon"><br>
+                            <b>Results</b>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.gpa.ac.in/home/scholarship.png" class="img-fluid icon"><br>
+                            <b>Scholoarships</b>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://www.gpa.ac.in/home/exam.png" class="img-fluid icon"><br>
+                            <b>Examinations</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nav-bar -->
+    <section class="navbararea">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto gap-4 ">
+                                <li class="my-2 home-icon">
+                                    <a href="index.html">
+                                        <i class="fa fa-home fs-4"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu p-4 border">
+                                        <li><a class="dropdown-item" href="#">About GPA</a></li>
+                                        <li><a class="dropdown-item" href="principle_Desk.html">Principle's Desk</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Our's Achievement</a></li>
+                                        <li><a class="dropdown-item" href="#">Approval,Affiliations &<br>
+                                                certification</a></li>
+                                        <li><a class="dropdown-item" href="#">cell & committee</a></li>
+                                        <li><a class="dropdown-item" href="#">RTI</a></li>
+                                        <li><a class="dropdown-item" href="#">Mandatory Disclosure</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Academics
+                                    </a>
+                                    <ul class="dropdown-menu  p-4 border">
+                                        <li><a class="dropdown-item" href="#">Departments</a></li>
+                                        <li><a class="dropdown-item" href="#">Faculty</a></li>
+                                        <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                                        <li><a class="dropdown-item" href="#">Academic calender</a></li>
+                                        <li><a class="dropdown-item" href="#">code of conduct</a></li>
+                                        <li><a class="dropdown-item" href="#">Examination Cell</a></li>
+                                        <li><a class="dropdown-item" href="#">Results</a></li>
+                                        <li><a class="dropdown-item" href="#">Scholarships</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Admission</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Facilities
+                                    </a>
+                                    <ul class="dropdown-menu  p-4 border">
+                                        <li><a class="dropdown-item" href="#">Hostels</a></li>
+                                        <li><a class="dropdown-item" href="#">Classroom</a></li>
+                                        <li><a class="dropdown-item" href="#">Laboratories</a></li>
+                                        <li><a class="dropdown-item" href="#">Library</a></li>
+                                        <li><a class="dropdown-item" href="#">Auditorium</a></li>
+                                        <li><a class="dropdown-item" href="#">Sports</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">T&P</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Info Desk
+                                    </a>
+                                    <ul class="dropdown-menu  p-4 border">
+                                        <li><a class="dropdown-item" href="#">Notices & Circular</a></li>
+                                        <li><a class="dropdown-item" href="#">Tenders</a></li>
+                                        <li><a class="dropdown-item" href="#">Downloads</a></li>
+                                        <li><a class="dropdown-item" href="#">Important Links</a></li>
+                                        <li><a class="dropdown-item" href="#">Anti Ragging</a></li>
+                                        <li><a class="dropdown-item" href="#">Grievance</a></li>
+                                        <li><a class="dropdown-item" href="#">Alumini</a></li>
+                                        <li><a class="dropdown-item" href="#">AICTE Scholarship /
+                                                Fellowship<br>Schemes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Media
+                                    </a>
+                                    <ul class="dropdown-menu  p-4 border">
+                                        <li><a class="dropdown-item" href="#">Events & Activities</a></li>
+                                        <li><a class="dropdown-item" href="#">Photos</a></li>
+                                        <li><a class="dropdown-item" href="#">Press clip</a></li>
+                                        <li><a class="dropdown-item" href="#">Publication</a></li>
+                                        <li><a class="dropdown-item" href="#">Videos</a></li>
+                                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="image-area">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="principal_slide1.jpg" class="d-block w-100" alt="principle_slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="principal_banner.jpg" class="d-block w-100" alt="principle_slide1">
+                </div>
+                <div class="carousel-item">
+                    <img src="principal_banner1.jpg" class="d-block w-100" alt="principle_slide2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="home d-flex">
+        <a href="#" class="text-danger"><b>Home</b></a>
+        <p>>About></p>
+        <h6>Our's Achievement</h6>
+    </section>
+
+    <section class="proud-moment pb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-danger"><b>A Proud Moment For</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mb-0">
+                <h4>Government Polytechnic Adityapur</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 justify-content-center text-center">
+                <img src="psymbol.png" alt="apsymbol" class="img-fluid mb-4" style="width:274px;" />
+            </div>
+        </div>
+        <div class="row ms-5  d-flex gap-4">
+            <!-- <div class="container d-flex gap-4"> -->
+            <div class="col-lg-3 col-md-6 col-sm-12  ceremony-image">
+                <img src="invitation_letter_07082026.jpg" />
+                <div class="text-area short-button">
+                    <a href="invitation-letter.pdf" class="read-more-btn1"><i
+                            class="fa fa-solid fa-envelope"></i>INVITATION LETTER</a>
+                    <h6>लोकभवन के एट होम में शामिल होंगे प्राचार्य</h6>
+                    <p>राजकीय पॉलिटेक्निक संस्थान आदित्यपुर के प्राचार्य संजीव कुमार व छात्र मानस प्रसाद स्वतंत्रता
+                        दिवस के...</p>
+                    <a href="at_home_celebration_07082026.jpg" class="read-more-btn2">READ MORE</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  ceremony-image">
+                <img src="principal-img2.jpg"/>
+                <div class="text-area short-button">
+                    <a href="#" class="read-more-btn3"><i class="fa fa-solid fa-trophy"></i>ACHIEVEMENT</a>
+                    <h6>Best Academic Teacher & Administrator</h6>
+                    <p>Dr. Sanjeev Kumar, Principal of GPA, has been honoured for his Best Academic Teacher...</p>
+                    <a href="at_home_celebration_07082026.jpg" class="read-more-btn2">READ MORE</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ceremony-image">
+                <img src="principal-img3.jpg" />
+                <div class="text-area short-button">
+                    <a href="invitation-letter.pdf" class="read-more-btn3"><i
+                            class="fa fa-solid fa-trophy"></i>ACHIEVEMENT</a>
+                    <h6>बेस्ट एकेडमिक टीचर एंड एडमिनिस्ट्रेटर</h6>
+                    <p>राजकीय पॉलिटेक्निक, आदित्यपुर के प्राचार्य संजीव कुमार को बेस्ट एकेडमिक टीचर एंड
+                        एडमिनिस्ट्रेटर का खिताब...</p>
+                    <a href="https://www.jnnews.co.in/article/jn-20260805-1410" class="read-more-btn2">READ MORE</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  ceremony-image">
+                <img src="principal-img4.jpg" />
+                <div class="text-area short-button">
+                    <a href="invitation-letter.pdf" class="read-more-btn3"><i
+                            class="fa fa-solid fa-trophy"></i>ACHIEVEMENT</a>
+                    <h6>बेस्ट एकेडमिक टीचर एंड एडमिनिस्ट्रेटर</h6>
+                    <p>आदित्यपुर राजकीय पॉलिटेक्निक के प्राचार्य संजीव कुमार को 'बेस्ट एकेडमिक टीचर एंड
+                        एडमिनिस्ट्रेटर'...
+                    </p>
+                    <a href="https://www.livehindustan.com/jharkhand/adityapur/story-sanjeev-kumar-principal-of-government-polytechnic-adityapur-has-been-awarded-the-title-of-best-academic-teacher-and-administrator-201785923921386.html"
+                        class="read-more-btn2">READ MORE</a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+
+    <section class="top-recruiter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 mt-4 mb-0 sign">
+                    <P>Top Recruiters of GPA </P>
+                    <img src="sign.png" />
+                </div>
+
+                <div class="col-lg-9 col-md-12 col-sm-12 d-flex gap-2 company-name">
+                    <!-- <marquee class="marquee-class flex-row"> -->
+                    <div class="marquee-content">
+                        <div class="company-logo mt-4">
+                            <img src="layam.jpg" alt="layam-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="narsingh_ispat.jpg" alt="narsingh-ispat-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="aditya_birla_group.jpg" alt="aditya-birla-group" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="jindal_steel_poer_logo.jpg" alt="jindal-steel-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="jsw_steel_logo.jpg" alt="jsw-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="tata_power.jpg" alt="tata-power-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="viraj_steel.jpg" alt="viraj-steel-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="infaya.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/evision.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/ceat.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/infaya.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/lt_logo.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/apollo_tyres.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                        <div class="company-logo mt-4">
+                            <img src="https://www.gpa.ac.in/assets/images/recruiters/infaya.jpg" alt="infaya-logo" class="rounded-4" />
+                        </div>
+                    </div>
+                    <!-- </marquee>                     -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footeratrea -->
+    <footer class="footerarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 importantlink">
+                    <h4 class="my-4">𝚀𝚄𝙸𝙲𝙺 𝙻𝙸𝙽𝙺</h4>
+
+                    <a href="#">→ MHRD</a>
+                    <a href="#">→ AICTE</a>
+                    <a href="#">→ Govt. of Jharkhand</a>
+                    <a href="#">→ JUT Ranchi</a>
+                    <a href="#">→ SBTE Jharkhand</a>
+                    <a href="#">→ Anti Ragging</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 importantlink">
+                    <h4 class="my-4">𝙽𝙰𝚅𝙸𝙶𝙰𝚃𝙸𝙾𝙽</h4>
+                    <a href="#">→ Mandatory Disclosure</a>
+                    <a href="#">→ T&P</a>
+                    <a href="#">→ Admission</a>
+                    <a href="#">→ Syllabus</a>
+                    <a href="#">→ Academic Calender</a>
+                    <a href="#">→AICTE Scholarship/Fellowship Schemes </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 importantlink3">
+                    <h4 class="my-4">𝙰𝙽𝚃𝙸𝚁𝙰𝙶𝙶𝙸𝙽𝙶</h4>
+                    <img src="anti_ragging_img.jpg" />
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-md-2 importantlink address">
+                    <h4 class="my-4">𝙰𝙳𝙳𝚁𝙴𝚂𝚂</h4>
+                    Government Polytechnic Adityapur<br><br>
+                    Adityapur Industrial Area<br><br>
+                    Seraikella-Kharsawan<br><br>
+                    Adityapur, Jamshedpur – 832109<br><br>
+                    Jharkhand, India
+                </div>
+            </div>
+            <hr style="height:2px; background:black;">
+            <div class="row mb-3">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <p class="footpart">&copy; 2026 Govt. Polytechnic, Adityapur. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <p class="footpart3">Frontend Clone project Designed by: <b class="text-danger">𝐀𝐛𝐡𝐢𝐬𝐡𝐞𝐤
+                            𝐊𝐮𝐦𝐚𝐫 𝐘𝐚𝐝𝐚𝐯</b></p>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 my-2">
+                    <i class="fa fa-facebook-official mx-2 text-primary"></i>
+                    <i class="fa fa-linkedin mx-2 text-danger"></i>
+                    <i class="fa fa-twitter mx-2 text-success"></i>
+                    <i class="fa  fa-youtube-play mx-2 text-warning"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 3000,
+            touch: false,
+            ride: 'carousel'
+        })
+    </script>
+</body>
+
+</html>

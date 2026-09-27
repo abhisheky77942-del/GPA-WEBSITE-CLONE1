@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<title> PHOTOS </title>
+	<style>
+		hr {
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(to right, transparent, red, transparent);
+		}
+		.photobox{
+			overflow:hidden;
+			border-radius:10px;
+			border:fixed;
+		}
+		.photobox img{
+			object-fit:cover;
+			border-radius:10px;
+			transition:0.5s ease;
+		}
+		.photobox:hover img{
+			transform:scale(1.1);
+		}
+		.photobox h5:hover{
+			color:#1AB69D;
+		}
+	</style>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!------BOX AREA-------->
+
+	<div class="row boxarea d-flex mt-5">
+		<hr>
+		<div class="col-lg-3 col-md-6 col-sm-12 photobox" data-aos="zoom-in">
+			<img src="p1.jpg" class="img-fluid" />
+			<h5 class="mt-3">Various activities on Reason, Cons, Treatment, Prevention of....</h5>
+			<p>10 June 2026</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12 photobox" data-aos="zoom-in">
+			<img src="p2.jpg" class="img-fluid" />
+			<h5 class="mt-3">Expert talk with CSE branch</h5>
+			<p> 27 Apr 2026</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12 photobox" data-aos="zoom-in">
+			<img src="p3.jpg" class="img-fluid" />
+			<h5 class="mt-3">Earth day celebration</h5>
+			<p> 22 Apr 2026</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12 photobox">
+			<img src="p4.jpg" class="img-fluid" style="width:300px;height:200px;" data-aos="zoom-in" />
+			<h5 class="mt-3">Republic Day Celebration 2026</h5>
+			<p> 26 Jan 2026 </p>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+		</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
